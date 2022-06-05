@@ -23,7 +23,7 @@ As the emergence of multidrug-resistant gram-negative bacteria raised a worldwid
 ## Usage
 
 
-```
+
 * Make the prediction 
 ```
 python PmxPred.py --type predict --isolate <isolate name> --SMILES_file <SMILES file>  
