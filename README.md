@@ -2,7 +2,8 @@
 
 As the emergence of multidrug-resistant gram-negative bacteria raised a worldwide concern on human health, polymyxin has recently re-merged in the clinical practice due to its high antimicrobial activity of multidrug-resistant bacteria. However, the nephrotoxicity and neurotoxicity of polymyxin seriously hindered its practical use in clinic. Based on the quantitative structure-activity relationship (QSAR), analogue design is an efficient strategy for discovering biologically active compounds with fewer adverse effects. To speed up the polymyxin analogues discovery process and find the polymyxin analogues with high antimicrobial activity against gram-negative bacteria, here we developed PmxPred, a SMILES-based machine learning framework. Morgan fingerprint and physicochemical descriptors were used for the molecular representation and the ensemble machine learning model is utilized for the antimicrobial activity prediction. This framework was trained and evaluated on gram-negative bacteria dataset, including A. baumannii, E. coli, K. pneumoniae, P. aeruginosa and a general gram-negative bacteria dataset achieving an AUROC of 0.819, 0.756, 0.933, 0.849 and 0.924 respectively on the independent test. PmxPred outperformed the transfer learning method that trained on 10 million molecules. 
 
-<div align=center><img  src ="https://user-images.githubusercontent.com/49023946/172045358-6a06b763-7a0b-4cbc-9542-a86d3f6aa886.png" alt="Framework of PmxPred"></div>
+<div align=center><img  src ="https://user-images.githubusercontent.com/49023946/182499438-32d86b90-983b-498d-ac68-34ce5b46321f.png" alt="Framework of PmxPred"></div>
+
 
 
 ## Dependency
