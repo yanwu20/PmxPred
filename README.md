@@ -34,9 +34,9 @@ python PmxPred.py --type predict --isolate <isolate name> --SMILES_file <SMILES 
 
 * output results format
 
-||Morgan figerprint|physicochemical descriptor|mean|pred|
+||Morgan figerprint|RDKit descriptor|mean|pred|
 | ---------- | :-----------:  | :-----------: | :-----------: | :-----------: |
-|id|score of Morgan fingerprint model|score of physicochemical descriptor model|final score|predict class|
+|id|score of Morgan fingerprint model|score of RDKit descriptor model|final score|predict class|
 
 ## Reference
   
