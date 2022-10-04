@@ -77,10 +77,10 @@ if __name__ == "__main__":
     parser.add_argument("--type", required=True,
                         choices=["benchmark", "predict"],
                         help="the encoding type")
-    parser.add_argument("--isolate", required=True,
+    parser.add_argument("--strain", required=True,
                         choices=["A. baumannii ATCC 19606", "E. coli ATCC 25922", "K. pneumoniae ATCC 13883",
                                  "P. aeruginosa ATCC 27853", "all"],
-                        help="the name of isolate")
+                        help="the name of strain")
     parser.add_argument('--SMILES_file', type=str, help='input SMILES file')
     parser.add_argument('--output_name', type=str, help='output file name')
     args = parser.parse_args()
