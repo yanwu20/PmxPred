@@ -8,10 +8,11 @@ As the emergence of multidrug-resistant gram-negative bacteria raised a worldwid
 
 ## Dependency
 * python 3.8
-* xgboost 0.90
+* xgboost 1.5.2 
 * scikit_learn 0.22.2 post1
-* R 
-* rpy2
+* imbalanced-learn 0.9.1
+* rdkit 2022.3.5
+* catboost 1.1
 
 ## Dataset
 * A. baumannii ATCC 19606_Binary.csv
@@ -21,13 +22,24 @@ As the emergence of multidrug-resistant gram-negative bacteria raised a worldwid
 * all_Binary.csv
 
 
-## Usage
 
+## Installation Guide
 
+*  Install from Github 
+```python
+git clone https://github.com/yanwu20/PmxPred.git
+cd PmxPred
+pip install -r requirements.txt
+```
+
+*Benchmark
+```
+python PmxPred.py --type benchmark --strain <strain name> 
+```
 
 * Make the prediction 
 ```
-python PmxPred.py --type predict --isolate <isolate name> --SMILES_file <SMILES file>  
+python PmxPred.py --type predict --strain <strain name> --SMILES_file <SMILES file>  
 ```
 
 
