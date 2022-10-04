@@ -92,7 +92,7 @@ if __name__ == "__main__":
         df_MFP = Smile2FP(X_test)
         df_RDK = Smile2RDK(X_test)
         df_result = prediction(df_RDK, df_MFP, args.isolate)
-        # df_result.to_csv(args.output_name)
+        df_result.to_csv(args.output_name)
         print(df_result)
     else:
         df_input = pd.read_csv(args.SMILES_file)
