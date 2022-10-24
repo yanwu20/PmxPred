@@ -86,18 +86,18 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.type == "benchmark":
-        df_input = pd.read_csv("./polymyxin data/%s_Binary.csv" % args.isolate)
+        df_input = pd.read_csv("./polymyxin data/%s_Binary.csv" % args.strain)
         X, X_test, y, y_test = train_test_split(df_input.iloc[:, :-1], df_input.iloc[:, -1], test_size=0.2,
                                                 random_state=0, stratify=df_input.iloc[:, -1])
         df_MFP = Smile2FP(X_test)
         df_RDK = Smile2RDK(X_test)
-        df_result = prediction(df_RDK, df_MFP, args.isolate)
+        df_result = prediction(df_RDK, df_MFP, args.strain)
         df_result.to_csv(args.output_name)
         print(df_result)
     else:
         df_input = pd.read_csv(args.SMILES_file)
         df_MFP = Smile2FP(df_input)
         df_RDK = Smile2RDK(df_input)
-        df_result = prediction(df_RDK, df_MFP, args.isolate)
+        df_result = prediction(df_RDK, df_MFP, args.strain)
         df_result.to_csv(args.output_name)
         print(df_result)
