@@ -81,7 +81,7 @@ if __name__ == "__main__":
     node_score = test(test_loader, model)
 
     # global feature model
-    with open("./cv_results/catBoost_%s_model" % args.strain, "rb") as f:
+    with open("./models/catBoost_%s_model" % args.strain, "rb") as f:
         global_cat_model = pickle.load(f)
 
     global_x_test = [d.global_feature.tolist() for d in test_set]
