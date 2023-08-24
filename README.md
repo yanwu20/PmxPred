@@ -13,6 +13,7 @@ The multidrug-resistant Gram-negative bacteria has evolved into a worldwide thre
 * imbalanced-learn 0.9.1
 * rdkit 2022.3.5
 * catboost 1.1
+* torch_geometric 2.3.0
 
 ## Dataset
 * A. baumannii ATCC 19606_Binary.csv
@@ -28,8 +29,7 @@ The multidrug-resistant Gram-negative bacteria has evolved into a worldwide thre
 *  Install from Github 
 ```python
 git clone https://github.com/yanwu20/PmxPred.git
-cd PmxPred
-pip install -r requirements.txt
+
 ```
 
 *Benchmark
