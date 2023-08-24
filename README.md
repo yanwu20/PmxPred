@@ -29,11 +29,9 @@ The multidrug-resistant Gram-negative bacteria has evolved into a worldwide thre
 *  Install from Github 
 ```python
 git clone https://github.com/yanwu20/PmxPred.git
-
 ```
 
-
-*Benchmark
+* Benchmark
 ```
 python PmxPred.py --type benchmark --strain <strain name> 
 ```
@@ -45,7 +43,7 @@ python PmxPred.py --type predict --strain <strain name> --SMILES_file <SMILES fi
 
 
 
-* output results format
+* Output results format
 
 ||Global score|Node score|final score|
 | ---------- | :-----------:  | :-----------: | :-----------: | 
