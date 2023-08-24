@@ -32,6 +32,7 @@ git clone https://github.com/yanwu20/PmxPred.git
 
 ```
 
+
 *Benchmark
 ```
 python PmxPred.py --type benchmark --strain <strain name> 
