@@ -48,7 +48,7 @@ python PmxPred.py --type predict --strain <strain name> --SMILES_file <SMILES fi
 
 ||Global score|Node score|final score|
 | ---------- | :-----------:  | :-----------: | :-----------: | 
-|id|score of Morgan fingerprint model|score of RDKit descriptor model|final score|predict class|
+|id|score of global model|score of residue model|final score|
 
 ## Reference
   
