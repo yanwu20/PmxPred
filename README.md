@@ -46,8 +46,8 @@ python PmxPred.py --type predict --strain <strain name> --SMILES_file <SMILES fi
 
 * output results format
 
-||Morgan figerprint|RDKit descriptor|mean|pred|
-| ---------- | :-----------:  | :-----------: | :-----------: | :-----------: |
+||Global score|Node score|final score|
+| ---------- | :-----------:  | :-----------: | :-----------: | 
 |id|score of Morgan fingerprint model|score of RDKit descriptor model|final score|predict class|
 
 ## Reference
